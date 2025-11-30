@@ -15,7 +15,8 @@ CFLAGS:=-O2 -g  -Wall -Wno-unused-but-set-variable -Wno-unused-result -Wno-unuse
 hufftreegentest : hufftreegentest.c
 	gcc $(CFLAGS) -o $@ $^
 
-videoout-$(RES).dat : ../badderbaby.gif gif_to_dat.py
+# Rule to generate videoout-$(RES).dat from the badderbaby.gif using python script
+videoout-$(RES).dat : ../badderbaby.gif
 	python gif_to_dat.py
 
 videocomp : videocomp.c ../common/bacommon.h

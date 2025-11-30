@@ -2,7 +2,7 @@
 
 This project adapts an existing highly optimized video compression codebase to process a new input, `badderbaby.gif`, focusing solely on generating a compressed GIF output without audio. The original codebase was designed for extreme compression of the "Bad Apple!!" video for deployment on resource-constrained microcontrollers.
 
-![Badderbaby Compressed GIF](comp2/video-64x48x8.gif)
+![Badderbaby Compressed GIF](docs/images/video-64x48x8.gif)
 
 ## Project Overview and Techniques
 

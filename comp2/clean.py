@@ -7,10 +7,9 @@ files_to_remove = [
     "videoout-64x48x8.dat",
     "stream-64x48x8.dat",
     "tiles-64x48x8.dat",
-    "video-64x48x8.gif",
+    # "video-64x48x8.gif", # This is the output the user wants to keep, will be moved
     "gen_badderbaby", # Executable
     "gen_badderbaby.c",
-    "gif_to_dat.py",
     "huffman_0.dat",
     "vpx_runs.dat",
     "symbol_list.txt",
@@ -27,8 +26,6 @@ def clean_files():
                     os.remove(f_name)
                     print(f"Removed file: {f_name}")
                 elif os.path.isdir(f_name):
-                    # For directories, remove recursively if needed.
-                    # Currently, all targets are files.
                     pass 
             except Exception as e:
                 print(f"Error removing {f_name}: {e}")
