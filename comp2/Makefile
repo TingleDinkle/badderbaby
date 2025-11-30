@@ -1,7 +1,7 @@
 RESX=64
 RESY=48
 BLOCKSIZE=8
-TARGET_GLYPH_COUNT=2048
+TARGET_GLYPH_COUNT=256
 FRAMECT=183 # Updated from 6570 to reflect actual frames in badderbaby.gif
 RES=$(RESX)x$(RESY)x$(BLOCKSIZE)
 

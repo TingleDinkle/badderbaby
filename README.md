@@ -43,14 +43,14 @@ To compress the `badderbaby.gif` using this codebase, the following modification
 4.  **Cleanup Script**:
     *   A Python script, `comp2/clean.py`, was created and integrated into the `Makefile`'s `clean` targets. This script handles the removal of generated executables and intermediate data files in a platform-agnostic way, addressing issues with `rm -rf` on the current Windows setup.
 
-## Compression Result (for `TARGET_GLYPH_COUNT=1024`)
+## Compression Result (for `TARGET_GLYPH_COUNT=256`)
 
 The `badderbaby.gif` (183 frames, 64x48 pixels) was successfully compressed using the project's techniques.
 
 *   **Original Data (raw pixel equivalent)**: `183 frames * 64 * 48 pixels/frame * 1 byte/pixel = 560,640 bytes`.
 *   **Final Compressed Output**: `docs/images/video-64x48x8.gif` (This file is now located in `docs/images/`)
-*   **Size**: **6078 bytes**
-*   **Compression Ratio**: Approximately **92.23:1** (uncompressed raw data to compressed GIF).
+*   **Size**: **6387 bytes**
+*   **Compression Ratio**: Approximately **87.77:1** (uncompressed raw data to compressed GIF).
 
 This result demonstrates highly effective compression, fitting the project's mandate for extremely small video payloads.
 
