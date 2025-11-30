@@ -54,3 +54,6 @@ The `badderbaby.gif` (183 frames, 64x48 pixels) was successfully compressed usin
 
 This result demonstrates highly effective compression, fitting the project's mandate for extremely small video payloads.
 
+## Build Process
+
+https://www.youtube.com/watch?v=VZwdiV46wpY
