@@ -26,8 +26,8 @@ test_tilehuff : test_tilehuff.c outdata.c ../common/gifenc.o
 	gcc -o $@ $^ $(LDFLAGS) $(LDLIBS) $(CFLAGS)
 
 
-videoout.dat : badapple-sm8628149.mp4 decodevideo
-	./decodevideo badapple-sm8628149.mp4 64 48
+videoout.dat : badderbaby.mp4 decodevideo
+	./decodevideo badderbaby.mp4 64 48
 #512 384
 
 outdata.c : videoout.dat tiletest8

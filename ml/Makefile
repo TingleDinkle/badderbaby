@@ -8,7 +8,7 @@ setup :
 	cp $(SOURCETILES) stream-kmeans_256_ni.dat
 	cp $(SOURCETILES) kmeans_256_ni_mse.dat
 
-	cp ../comp2/badapple-sm8628149.mp4 "Touhou - Bad Apple.mp4"
+	cp ../comp2/badderbaby.mp4 "Touhou - Bad Apple.mp4"
 	echo "img_size = (${RESY}, ${RESX})" > blocksettings.py
 	echo "block_size = (${BLOCKSIZE}, ${BLOCKSIZE})" >> blocksettings.py
 	echo "nblocks = ${TARGET_GLYPH_COUNT}" >> blocksettings.py
