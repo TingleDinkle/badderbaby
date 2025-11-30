@@ -2,7 +2,7 @@
 
 This project adapts an existing highly optimized video compression framework to process a new input, `badderbaby.gif`, focusing solely on generating a compressed GIF output without audio. The original framework was designed for extreme compression of the "Bad Apple!!" video for deployment on resource-constrained microcontrollers.
 
-![Badderbaby Compressed GIF](docs/images/video-64x48x8.gif)  *(Note: This link will work after you push the changes to your GitHub repository and replace this placeholder with the actual "Raw" URL of the GIF on GitHub.)*
+![Badderbaby Compressed GIF](docs/images/video-64x48x8.gif)  
 
 ## Project Overview and Techniques
 
