@@ -1,12 +1,12 @@
 # Badderbaby Project
 
-This project adapts an existing highly optimized video compression codebase to process a new input, `badderbaby.gif`, focusing solely on generating a compressed GIF output without audio. The original codebase was designed for extreme compression of the "Bad Apple!!" video for deployment on resource-constrained microcontrollers.
+This project adapts an existing highly optimized video compression framework to process a new input, `badderbaby.gif`, focusing solely on generating a compressed GIF output without audio. The original framework was designed for extreme compression of the "Bad Apple!!" video for deployment on resource-constrained microcontrollers.
 
-![Badderbaby Compressed GIF](docs/images/video-64x48x8.gif)
+![Badderbaby Compressed GIF](docs/images/video-64x48x8.gif)  *(Note: This link will work after you push the changes to your GitHub repository and replace this placeholder with the actual "Raw" URL of the GIF on GitHub.)*
 
 ## Project Overview and Techniques
 
-This project leverages sophisticated compression techniques, originally developed for the "Bad Apple!!" demoscene, to achieve a highly efficient representation of video data. Key techniques utilized include:
+This project leverages sophisticated compression techniques, originally developed for the "Bad Apple!!" demoscene, to achieve a highly efficient representation of video data suitable for extremely resource-constrained devices. Key techniques utilized include:
 
 *   **Block-based Encoding**: Video frames are broken down into 8x8 pixel blocks (tiles).
 *   **K-Means Clustering**: Used to identify a limited set of unique "glyphs" (block patterns) that best represent the video content, minimizing visual quality loss.
@@ -43,13 +43,14 @@ To compress the `badderbaby.gif` using this codebase, the following modification
 4.  **Cleanup Script**:
     *   A Python script, `comp2/clean.py`, was created and integrated into the `Makefile`'s `clean` targets. This script handles the removal of generated executables and intermediate data files in a platform-agnostic way, addressing issues with `rm -rf` on the current Windows setup.
 
-## Compression Result
+## Compression Result (for `TARGET_GLYPH_COUNT=1024`)
 
 The `badderbaby.gif` (183 frames, 64x48 pixels) was successfully compressed using the project's techniques.
 
 *   **Original Data (raw pixel equivalent)**: `183 frames * 64 * 48 pixels/frame * 1 byte/pixel = 560,640 bytes`.
 *   **Final Compressed Output**: `docs/images/video-64x48x8.gif` (This file is now located in `docs/images/`)
-*   **Size**: **6322 bytes** (improved from 6796 bytes with higher `TARGET_GLYPH_COUNT=512`)
-*   **Compression Ratio**: Approximately **88.68:1** (uncompressed raw data to compressed GIF).
+*   **Size**: **6229 bytes**
+*   **Compression Ratio**: Approximately **90.00:1** (uncompressed raw data to compressed GIF).
 
 This result demonstrates highly effective compression, fitting the project's mandate for extremely small video payloads.
+
